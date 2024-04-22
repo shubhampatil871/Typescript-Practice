@@ -34,6 +34,7 @@ const createPairs = <T,U> (first : T,second : U) => {
     return [first,second]
 }
 
+// console.log(createPairs(1,"shubham"));
 
 function displayFirstElement <T>(arr:T[]):T | undefined {
     if (arr.length > 0 ) {
@@ -43,7 +44,28 @@ function displayFirstElement <T>(arr:T[]):T | undefined {
 }
 
 
-
 const displayFirstElementArrow = <T> (arr:T[]):T | undefined => Array.length > 0 ? arr[0] : undefined;
 
-console.log(createPairs(1,"shubham"));
+
+console.log(displayFirstElement([2,4,6,8]));
+console.log(displayFirstElementArrow([4,6,8,9]));
+
+
+type dataPair = {
+    id : number ,
+    data : string
+}
+
+const hasDuplicates= <T>(arr:T[]) :any => { 
+    const set = new Set<T>();
+    for (const item of arr) {
+        if(set.has(item)){
+            return true;
+        }
+        set.add(item);
+    }
+    return false;
+    ;
+}
+
+console.log(hasDuplicates([,1,3,2,4,5,6,7,8,9]));
