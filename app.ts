@@ -30,8 +30,20 @@ const disName:number = displayName(69);
 
 
 
-const displayFirstElement = <T,U> (first : T,second : U) => {
+const createPairs = <T,U> (first : T,second : U) => {
     return [first,second]
 }
 
-console.log(displayFirstElement(1,"shubham"));
+
+function displayFirstElement <T>(arr:T[]):T | undefined {
+    if (arr.length > 0 ) {
+        return arr[0]
+    }
+    else return undefined
+}
+
+
+
+const displayFirstElementArrow = <T> (arr:T[]):T | undefined => Array.length > 0 ? arr[0] : undefined;
+
+console.log(createPairs(1,"shubham"));
