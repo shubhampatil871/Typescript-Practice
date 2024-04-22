@@ -14,4 +14,4 @@ export const countOccurences =<T> (arr:T[]):Map<T,number> => {
 
 
 const numbers: number[] = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4,4];
-console.log("Occurrences:", countOccurences(numbers));
+// console.log("Occurrences:", countOccurences(numbers));
