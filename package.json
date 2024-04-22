@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "name": "typescript-practice",
+  "version": "1.0.0",
+  "description": "This repo won't be organised properly ,every file and code might get pushed on random basis.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shubham patil",
+  "license": "ISC"
+}

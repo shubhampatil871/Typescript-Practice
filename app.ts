@@ -1,3 +1,7 @@
+import { hasDuplicates } from "./hasDuplicates.js";
+import { countOccurences } from "./countOccurances.js";
+
+
 // let firstNumber: number = 34;
 // let secondNumber: number = 69;
 
@@ -26,7 +30,7 @@ function displayName<T>(name:T):T|any {
     return dis;
 }
 
-const disName:number = displayName(69);
+// const disName:number = displayName(69);
 
 
 
@@ -47,8 +51,8 @@ function displayFirstElement <T>(arr:T[]):T | undefined {
 const displayFirstElementArrow = <T> (arr:T[]):T | undefined => Array.length > 0 ? arr[0] : undefined;
 
 
-console.log(displayFirstElement([2,4,6,8]));
-console.log(displayFirstElementArrow([4,6,8,9]));
+// console.log(displayFirstElement([2,4,6,8]));
+// console.log(displayFirstElementArrow([4,6,8,9]));
 
 
 type dataPair = {
@@ -56,16 +60,10 @@ type dataPair = {
     data : string
 }
 
-const hasDuplicates= <T>(arr:T[]) :any => { 
-    const set = new Set<T>();
-    for (const item of arr) {
-        if(set.has(item)){
-            return true;
-        }
-        set.add(item);
-    }
-    return false;
-    ;
-}
+// console.log(hasDuplicates(["shubham","mayur","devvrat","utkarsh","pratish","gunjan"]))
 
-console.log(hasDuplicates([,1,3,2,4,5,6,7,8,9]));
+
+
+
+const numbers: number[] = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4];
+console.log("Occurrences:", countOccurences(numbers));
